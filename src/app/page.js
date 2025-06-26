@@ -17,11 +17,11 @@ export default function Home() {
 
       {/* Phần nền ảnh và nội dung chính */}
       <div
-        className="relative flex flex-col items-center justify-center text-center px-4 py-12 bg-cover bg-center"
+        className="relative flex flex-col items-center justify-center text-center px-4 py-6 bg-cover bg-center"
         style={{ backgroundImage: "url('/bg-vietnam.jpg')" }}
       >
         {/* Hộp thông tin */}
-        <div className="bg-white/80 rounded-lg p-6 max-w-[60%] mb-6">
+        <div className="bg-white/80 rounded-lg p-6 max-w-[100%] mb-6 w-full sm:max-w-[60%]">
           <h1 className="text-2xl md:text-3xl font-bold mb-2 text-blue-900">Let's Speak Vietnamese!</h1>
           <p className="text-gray-700">
             Check my <span className="font-bold">Vietnamese MasterCourses</span>, visit their pages and pick your level. Remember, I can always switch you from one to another, in case it's needed!
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         {/* Video hoặc hình ảnh người dạy */}
-        <div className="w-[40%] h-[350px] mx-auto relative">
+        <div className="w-[100%] sm:w-[45%] h-[350px] mx-auto relative">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/tjkOYzYazAw"
@@ -50,7 +50,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col md:flex-row gap-6 justify-center items-start p-4">
-        <div className="w-[70%] grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-start p-4">
+        <div className="w-[100%] sm:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-start p-4">
           {/* Card 1 */}
           <motion.div
             className="border rounded-lg shadow-lg p-4 bg-white text-center space-y-4"
@@ -101,7 +101,7 @@ export default function Home() {
           {/* Card 3 */}
           <div className="md:col-span-2 flex justify-center">
             <motion.div
-              className="border rounded-lg shadow-lg p-4 bg-white text-center space-y-4 w-[50%]"
+              className="border rounded-lg shadow-lg p-4 bg-white text-center space-y-4 w-[100%] sm:w-[50%]"
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
