@@ -2,7 +2,9 @@
 import { useEffect, useState } from "react"
 import CountdownTimer from "./components/countdowntime"
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter()
   return (
     <div
       className="min-h-screen flex flex-col bg-contain bg-center"
@@ -56,8 +58,10 @@ export default function Home() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: false }}
+            onClick={() => router.push('/beginner')}
+
           >
-            <img src="/giang2.jpg" alt="Beginner Course" className="w-full rounded" />
+            <img src="/giang2.jpg" alt="Beginner Course" className="w-full rounded h-[300px] object-cover" />
             <h3 className="text-lg md:text-xl font-bold text-blue-900">
               VIETNAMESE MADE EASY: BEGINNER COURSE
             </h3>
@@ -78,8 +82,9 @@ export default function Home() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: false }}
+            onClick={() => router.push('/intermediate')}
           >
-            <img src="/giang1.jpg" alt="Intermediate Course" className="w-full rounded" />
+            <img src="/giang1.jpg" alt="Intermediate Course" className="w-full rounded h-[300px] object-cover" />
             <h3 className="text-lg md:text-xl font-bold text-blue-900">
               VIETNAMESE MADE EASY: INTERMEDIATE COURSE
             </h3>
@@ -101,10 +106,11 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
               viewport={{ once: false }}
+              onClick={() => router.push('/bundle')}
             >
-              <img src="/giang2.jpg" alt="Intermediate Course" className="w-full rounded" />
+              <img src="/giang2.jpg" alt="BUNDLE Course" className="w-full rounded h-[300px] object-cover" />
               <h3 className="text-lg md:text-xl font-bold text-blue-900">
-                VIETNAMESE MADE EASY: INTERMEDIATE COURSE
+                VIETNAMESE MADE EASY: BUNDLE COURSE
               </h3>
               <p className="text-gray-700 text-sm h-[80px]">
                 Ready to level up your Vietnamese? This intermediate course is perfect for those who’ve got the basics
