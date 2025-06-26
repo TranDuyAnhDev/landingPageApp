@@ -57,7 +57,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
-            <img src="/beginner.jpg" alt="Beginner Course" className="w-full rounded" />
+            <img src="/giang2.jpg" alt="Beginner Course" className="w-full rounded" />
             <h3 className="text-lg md:text-xl font-bold text-blue-900">
               VIETNAMESE MADE EASY: BEGINNER COURSE
             </h3>
@@ -79,7 +79,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
-            <img src="/beginner.jpg" alt="Intermediate Course" className="w-full rounded" />
+            <img src="/giang1.jpg" alt="Intermediate Course" className="w-full rounded" />
             <h3 className="text-lg md:text-xl font-bold text-blue-900">
               VIETNAMESE MADE EASY: INTERMEDIATE COURSE
             </h3>
@@ -102,7 +102,7 @@ export default function Home() {
               transition={{ duration: 1 }}
               viewport={{ once: false }}
             >
-              <img src="/beginner.jpg" alt="Intermediate Course" className="w-full rounded" />
+              <img src="/giang2.jpg" alt="Intermediate Course" className="w-full rounded" />
               <h3 className="text-lg md:text-xl font-bold text-blue-900">
                 VIETNAMESE MADE EASY: INTERMEDIATE COURSE
               </h3>
