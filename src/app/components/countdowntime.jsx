@@ -67,6 +67,9 @@ export default function CountdownTimer({ targetDate }) {
           <span className="text-base text-black">SECS</span>
         </div>
       </div>
+      <button className="mt-4 px-6 py-2 bg-yellow-500 text-white font-bold rounded-lg shadow-lg hover:bg-yellow-600 transition">
+        Sign Up Now
+      </button>
     </div>
   );
 }
